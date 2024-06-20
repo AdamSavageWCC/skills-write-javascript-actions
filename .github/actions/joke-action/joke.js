@@ -12,7 +12,7 @@ const options = {
 
 async function getJoke() {
   const res = await request(options);
-  return "The joke is "res.joke;
+  return res.joke;
 }
 
 module.exports = getJoke;
